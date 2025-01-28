@@ -1,41 +1,51 @@
 /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 0;
-  padding: 0;
   background-color: #f4f4f4;
   color: #333;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header Section */
 header {
-  background: #333;
+  background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
+  font-size: 36px;
 }
 
 header p {
   margin: 5px 0;
 }
 
-a {
+header a {
   color: #3498db;
   text-decoration: none;
 }
 
-a:hover {
+header a:hover {
   text-decoration: underline;
 }
 
 /* Section Styles */
 section {
+  margin: 20px 0;
   padding: 20px;
-  margin: 20px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -43,20 +53,31 @@ section {
 
 section h2 {
   margin-top: 0;
+  font-size: 24px;
+  color: #333;
 }
 
-ul {
+section ul {
   list-style-type: none;
-  padding-left: 0;
 }
 
-ul li {
-  margin-bottom: 15px;
+section ul li {
+  margin-bottom: 20px;
 }
 
+section ul li h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+section ul li p {
+  margin: 5px 0;
+}
+
+/* Footer Section */
 footer {
-  text-align: center;
-  padding: 20px;
-  background: #333;
+  background-color: #333;
   color: white;
+  padding: 10px 0;
+  text-align: center;
 }
